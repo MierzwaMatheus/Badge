@@ -32,22 +32,24 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-font-family: 'Roboto', sans-serif;
-color: var(--grey-3);
-align-items: center;
-justify-content: center;
-text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: var(--grey-3);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-background-color: var(--black-2);
+  background-color: var(--black-2);
 }
 
 main {
-  background: url(./assets/background.png);
-  width: 37.5rem;
-  height: 81.2rem;
+
+  width: 100vw;
+  height: 100vh;
+  min-height: 812px;
 }
 
 .content {
+  background: url(./assets/background.png) no-repeat center/cover;
   padding-top: 18.2rem;
   padding-bottom: 16.8rem;
   padding-inline: 5.6rem;
@@ -99,4 +101,54 @@ main {
   align-items: center;
   gap: .8rem;
   list-style: none;
+}
+
+/* ================Desk-Version========== */
+@media (min-width: 720px) {
+
+  body {
+    background-color: var(--black-1);
+    
+  }
+
+  .gradients {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gradients .gradient-one {
+    position: fixed;
+    left: 20%;
+  }
+
+  .gradients .gradient-two {
+    position: fixed;
+    right: 20%;
+  }
+
+  .faixa {
+    top: 0;
+    display:block;
+  }
+
+  .break {
+    margin-top: -.5rem;
+  }
+
+  .content {
+    background: url(./assets/background-desk.png) center no-repeat;
+    margin-top: -19rem;
+    width: 35.8rem;
+    margin-inline: auto; 
+
+    flex-direction: column;
+  }
+
+  .content .avatar {
+    padding-top: 2.5rem;
+  }
+
+  .content p {
+    margin-bottom: 2.5rem;
+  }
 }
