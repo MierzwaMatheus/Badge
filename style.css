@@ -37,6 +37,8 @@ color: var(--grey-3);
 align-items: center;
 justify-content: center;
 text-align: center;
+
+background-color: var(--black-2);
 }
 
 main {
