@@ -103,6 +103,17 @@ main {
   list-style: none;
 }
 
+.gradients {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.faixa {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
 /* ================Desk-Version========== */
 @media (min-width: 720px) {
 
@@ -114,6 +125,8 @@ main {
   .gradients {
     display: flex;
     justify-content: center;
+    opacity: 100;
+    visibility: visible;
   }
 
   .gradients .gradient-one {
@@ -127,6 +140,8 @@ main {
   }
 
   .faixa {
+    opacity: 100;
+    visibility: visible;
     top: 0;
     display:block;
   }
